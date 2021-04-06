@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"github.com/Bakhich/bank1/v2/pkg/types"
+	"github.com/Bakhich/bank/pkg/types"
 )
 
 //Avg расчитовает среднюю сумму платежа
