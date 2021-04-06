@@ -3,7 +3,7 @@ package stats
 import (
 	"fmt"
 
-	"github.com/Bakhich/bank/pkg/types"
+	"github.com/Bakhich/bank/v2/pkg/types"
 )
 
 func ExampleAvg() {
@@ -12,22 +12,25 @@ func ExampleAvg() {
 			ID:       1,
 			Amount:   53_00,
 			Category: "Cat",
+			Status:   "OK",
 		},
 		{
 			ID:       2,
 			Amount:   51_00,
 			Category: "Cat",
+			Status:   "OK",
 		},
 		{
 			ID:       3,
 			Amount:   52_00,
 			Category: "Cat",
+			Status:   "FAIL",
 		},
 	}
 
 	fmt.Println(Avg(payments))
 
-	//Output: 5200
+	//Output: 3466
 }
 
 func ExampleTotalInCategory() {
